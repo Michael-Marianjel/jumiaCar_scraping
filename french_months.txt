@@ -1,0 +1,14 @@
+aujourd'hui > today
+hier > yesterday
+janv > january
+févr > february
+mars > march
+avri > april
+mai > may
+juin > june
+juil > july
+août > august
+sept > september
+octo > october
+nove > november
+déce > december
