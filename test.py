@@ -1,12 +1,15 @@
-from datetime import date, timedelta
+from multiprocessing.dummy import Pool as ThreadPool
 
-today = date.today()
-yesterday = today - timedelta(days = 1)
+def kgs(link):
+  print(link)
 
-# yesterday = today - datetime.timedelta(days=1)
-# day_month = str(date.today()).split("-")
-# date = day_month[2] + "/" + day_month[1]
+car_urls =['kgs', 'wg', 'erh', 'rtj', 'tyk', 'il', 'ui;', 'io', 'op', 'op']
+def main():
+  pool = ThreadPool(10)
+  pool.map(kgs, car_urls)
 
-print(yesterday)
-
+  # close the pool and wait for the work to finish
+  pool.close()
+  pool.join()
+main()
 
