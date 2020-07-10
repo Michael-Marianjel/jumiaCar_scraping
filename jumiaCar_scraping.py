@@ -141,8 +141,8 @@ def get_car(link):
 
 def main():
   global car_urls
-  nextPage_link = "https://deals.jumia.ci/voitures?page=5395"
-  row = 5395
+  nextPage_link = "https://deals.jumia.ci/voitures?page=20408"
+  row = 20408
   while(1):
     print(nextPage_link+"                             --------------------"+str(row)+"------------------------")
     page_response = requests.get(nextPage_link)
